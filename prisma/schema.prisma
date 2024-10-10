@@ -23,8 +23,9 @@ datasource db {
 
 
 model Person {
-  id        Int     @id @default(autoincrement())
-  firstname String
-  lastname  String
-  phone     String
+  id        Int     @id @default(autoincrement()) // Unique identifier for the person, auto-incremented
+  firstname String  // First name of the person
+  lastname  String  // Last name of the person
+  phone     String  // Phone number of the person
+  dob       DateTime    // Date of birth of the person
 }
