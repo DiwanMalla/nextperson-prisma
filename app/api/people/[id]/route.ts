@@ -12,7 +12,7 @@ export async function GET(request: Request, context: any) {
   });
   if (!person) {
     return new Response("Not Found", {
-      status: 400,
+      status: 404,
     });
   }
   return new Response(JSON.stringify(person), {
